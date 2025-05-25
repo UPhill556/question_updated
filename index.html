@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question for Korey</title>
+  <style>
+    body {
+      background-color: #2f3b45;
+      color: lightblue;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    .buttons {
+      margin-top: 50px;
+    }
+
+    .button {
+      font-size: 2em;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .yes {
+      background-color: #d0f0c0;
+    }
+
+    .yes:hover {
+      background-color: #b2e6a6;
+    }
+
+    .no {
+      background-color: #fdd;
+    }
+
+    .no:hover {
+      background-color: #fbb;
+    }
+
+    .video-container {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Korey, would you date me?</h1>
+
+  <div class="buttons">
+    <button class="button yes" onclick="window.location.href='https://www.youtube.com/watch?v=KN3IemyqJJw'">Yes 😺</button>
+    <button class="button no" onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">No 😿</button>
+  </div>
+
+  <div id="video" class="video-container"></div>
+
+  <script>
+    function showVideo() {
+      document.getElementById('video').innerHTML = `
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KN3IemyqJJw?autoplay=1" 
+        title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      `;
+    }
+  </script>
+
+</body>
+</html>
